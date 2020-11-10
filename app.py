@@ -21,10 +21,10 @@ def index():
 
         if escolha == 'futurista':
             premio = 'um sabre de luz'
-            premio_imagem = ''
+            premio_imagem = 'https://i.pinimg.com/originals/f5/72/7b/f5727b17d6e3cb84596deb8f96cbe071.gif'
         elif escolha == 'medieval':
-           premio = 'uma espada'
-           premio_imagem = ''
+            premio = 'uma espada'
+            premio_imagem = 'https://media.indiedb.com/images/members/5/4384/4383197/profile/Knight.gif'
 
     return render_template('index.html', nome_jogador=nome_jogador, premio=premio, premio_imagem=premio_imagem)
 

@@ -8,10 +8,13 @@
 </head>
 <body>
     <div class="jogo">
+
+        {% if not premio %}
+
         <form method="post">
             <div class="jogo__input">
                 <label for="nome_jogador" class="jogo__label">Digite o seu nome: </label>
-                <input type="text" name="nome_jogador" id="nome_jogador" placeholder="João Guilherme">
+                <input type="text" name="nome_jogador" id="nome_jogador" placeholder="João Guilherme" required>
             </div>
 
             <div class="jogo__input">
@@ -26,6 +29,23 @@
                 <input type="submit" class="jogo__botao" value="Jogar!">
             </div>
         </form>
+
+        {% else %}
+
+            <div class="jogo__premio">
+                {{ nome_jogador }}, você recebeu <br /> {{ premio }}<br />
+            </div>
+
+            <div class="jogo__premio_imagem">
+                <img src="{{ premio_imagem }}" alt="Imagem de {{ premio }}" width="100%"> 
+            </div>
+
+            <div class="jogo__input jogo__input--jogar_novamente">
+                <a href="/" class="jogo__botao">Jogar Novamente</a>
+            </div>
+           
+        {% endif %}
+
     </div>
 </body>
 </html>
