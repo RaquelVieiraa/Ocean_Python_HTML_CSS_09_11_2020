@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo do Ocean com Python </title>
+    <title>Jogo do Ocean com Python</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <div class="jogo"> 
+    <div class="jogo">
         <form method="post">
             <div class="jogo__input">
-                <label for="nome_jogador" class="jogo__label"> Digite o seu nome: </label>
+                <label for="nome_jogador" class="jogo__label">Digite o seu nome: </label>
                 <input type="text" name="nome_jogador" id="nome_jogador" placeholder="João Guilherme">
-            
-                <input type="radio" name="escolha" id="escolha1" value="futurista" checked>
-                <label for="escolha1">Futurista</label>
-               
-                <input type="radio" name="escolha" id="escolha2" value="medieval">
-                <label for="escolha2">Medieval</label>
-               
             </div>
 
             <div class="jogo__input">
-                <input type="submit" class="jogo__botao" value="Jogar!">   
+                <input type="radio" name="escolha" id="escolha1" value="futurista" checked>
+                <label for="escolha1">Futurista</label>
+
+                <input type="radio" name="escolha" id="escolha2" value="medieval">
+                <label for="escolha2">Era Medieval</label>
+            </div>
+
+            <div class="jogo__input">
+                <input type="submit" class="jogo__botao" value="Jogar!">
             </div>
         </form>
     </div>
